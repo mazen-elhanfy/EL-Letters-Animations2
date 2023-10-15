@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+.parent{
+    width: 900px;
+        height: 300px;
+        margin: 60px 300px;
+        display: inline-flex;
+}
+.letter-E{
+    width: 450px;
+    height: 300px;
+    position: relative;
+    /* border: 1px solid #00f; */
+}
+.one{
+    width: 10%;
+        height: 80%;
+        background-color: grey;
+        position: absolute;
+        left: 10%;
+        top: 10%;
+}
+.two{
+    height: 10%;
+        width: 40%;
+        background-color: grey;
+        position: absolute;
+        left: 20%;
+        top: 10%;
+}
+.three{
+        height: 10%;
+        width: 35%;
+        background-color: grey;
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        transform:translateY(-50%) ;
+        -webkit-transform:translateY(-50%) ;
+        -moz-transform:translateY(-50%) ;
+        -ms-transform:translateY(-50%) ;
+        -o-transform:translateY(-50%) ;
+}
+.four{
+        height: 10%;
+            width: 40%;
+            background-color: grey;
+            position: absolute;
+            left: 20%;
+            top: 80%;
+}
+.letter-l{
+    width: 450px;
+        height: 300px;
+        position: relative;
+        /* border: 1px solid #00f;  */
+    margin-left: -150px;
+}
+.first{
+    width: 10%;
+        height: 80%;
+        background-color: grey;
+        position: absolute;
+        left: 10%;
+        top: 10%;
+}
+.second{
+            height: 10%;
+                width: 40%;
+                background-color: grey;
+                position: absolute;
+                left: 20%;
+                top: 80%;
+}
+.third{
+    width: 20px;
+        height: 20px;
+        background-color: orange;
+        position: absolute;
+        left: 13%;
+        top: 12%;
+        z-index: 4; 
+        animation-name: square;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-play-state: running;
+}
+ .orange-e{
+    width: 20px;
+        height: 20px;
+        background-color: orange;
+        position: absolute;
+        left: 54%;
+        top: 12%;
+        z-index: 4;
+    animation-name: box;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+    animation-direction: normal;
+    animation-play-state:running;
+}
+@keyframes box{
+15%{
+    position: absolute;
+    left: 13%;
+    top: 12%;
+}
+30%{
+    position: absolute;
+    left: 13%;
+    top: 47%;
+}
+45%{
+    position: absolute;
+    left: 50%;
+    top: 47%;
+}
+60%{
+    position: absolute;
+    left: 13%;
+    top: 47%;
+}
+75%{
+    position: absolute;
+    left: 13%;
+    top: 82%;
+}
+90%{
+    position: absolute;
+    left: 54%;
+    top: 82%;
+}
+100%{
+    position: absolute;
+    left: 13%;
+    top: 82%;
+}
+}
+@keyframes square{
+    25%{
+        position: absolute;
+        left: 13%;
+        top: 81%;
+    }
+    50%{
+        position: absolute;
+        left: 53%;
+        top: 81%;
+    }
+    75%{
+        position: absolute;
+        left: 13%;
+        top: 81%;
+    }   
+    100%{
+        position: absolute;
+        left: 13%;
+        top: 12%;
+    }
+}
